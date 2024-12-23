@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "FeatureMono-Medium";
+    src: url("../fonts/Feature Mono/FeatureMono-Medium.ttf");
+}
+@font-face {
+    font-family: "FeatureMono-Bold";
+    src: url("../fonts/Feature Mono/FeatureMono-Bold.ttf");
+}
+@font-face {
+    font-family: "FeatureMono-Regular";
+    src: url("../fonts/Feature Mono/FeatureMono-Regular.ttf");
+}
+@font-face {
+  font-family: "FeatureMono-Thin";
+  src: url("../fonts/Feature Mono/FeatureMono-Thin.ttf");
+}
+
+body {
+    background-color: rgb(228, 228, 228);
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    font-family:"FeatureMono-Medium";
+    border: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 36px;
+    margin: 0 auto;
+    padding: 5px;
+}
+#HeaderElements {
+    text-align: left;
+    margin-left: 20px;
+}
+main {
+    padding: 5px;
+    font-family: "FeatureMono-Regular";
+}
+
+/* */
+
+* {box-sizing: border-box;}
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  height: 42px;
+  font-family: "FeatureMono-Thin";
+}
+input {
+  height: 42px;
+  width: 0;
+  padding: 0 15px 0 15px;
+  border: none;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  outline: none;
+  background: transparent;
+  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+input:focus {
+  width: 300px;
+  z-index: 1;
+  border: 2px solid rgb(0, 0, 0);
+}
+button {
+  background: #000000;
+  border: none;
+  border-radius: 15px;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+button:before {
+  content: "\f002";
+  font-family: "FeatureMono-Thin";
+  font-size: 16px;
+  color: #ffffff;
+}
